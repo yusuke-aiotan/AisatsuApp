@@ -12,12 +12,12 @@ class MainActivity : AppCompatActivity() ,View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        button1.setOnClickListener(this)
+        button.setOnClickListener(this)
 
     }
 
     override fun onClick(v: View) {
-        if (v.id == R.id.button1) {
+        if (v.id == R.id.button) {
             showTimePickerDialog()
         }
     }
@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() ,View.OnClickListener {
 //        super.onCreate(savedInstanceState)
 //        setContentView(R.layout.activity_main)
 //
-//        button1.setOnClickListener {
+//        button.setOnClickListener {
 //                val timePickerDialog = TimePickerDialog(
 //                    this,
 //                    TimePickerDialog.OnTimeSetListener { view, hour, minute ->
